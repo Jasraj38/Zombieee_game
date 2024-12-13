@@ -1,3 +1,7 @@
+//Pratik Niroula
+//Jas Raj Dangi
+// Priyanaka Chaudary
+// Samip Thapa
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
