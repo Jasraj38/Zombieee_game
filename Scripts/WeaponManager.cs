@@ -1,6 +1,6 @@
 //Pratik Niroula
 //Jas Raj Dangi
-// Priyanaka Chaudary
+// priyanka Chaudhary
 // Samip Thapa
 
 
