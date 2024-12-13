@@ -54,10 +54,12 @@ public class GameManager : MonoBehaviour
 
             //this helps to respawn the zombiee randomly in 5 diffrent place whic are loacted in the game
             GameObject spawnPoint = spawnPoints[Random.Range(0, spawnPoints.Length)];
-
+            
+// seeting up the gameobject zombie(enemyspawned) to respawn at the location 
             GameObject enemySpawned = Instantiate(enemyPrefab, spawnPoint.transform.position, Quaternion.identity);
+            //accesing the Gamemanger.cs file for the zombie
             enemySpawned.GetComponent<EnemyManager>().gameManager = GetComponent<GameManager>();
-            // Increase the enemy when its is dies
+            // Increase the enemy by 1
             enemiesAlive++;
         }
 
