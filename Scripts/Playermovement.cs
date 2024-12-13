@@ -2,7 +2,7 @@
 //Jas Raj Dangi
 // priyanka Chaudhary
 // Samip Thapa
-
+// In this Code player can move in the direction through comand of (WASD) and space for jump. In this code we added gravity too.
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -34,7 +34,7 @@ public class Playermovement : MonoBehaviour
 
         //check player id grounded or not and helps for gravity of the player
         isGrounded = Physics.CheckSphere(GroundCheck.position, groundDistance, groundMask);
-
+// this is for the velocity
         if (isGrounded && velocity.y < 0)
         {
             velocity.y = -2f;
@@ -48,7 +48,7 @@ public class Playermovement : MonoBehaviour
 
         Vector3 move = transform.right * x + transform.forward * z;
 
-
+// We multiply by time because speed is (m/s) so we multiply by time.
         controller.Move(move * speed * Time.deltaTime);
         //velocity for the player
         velocity.y += gravity * Time.deltaTime;
@@ -58,7 +58,7 @@ public class Playermovement : MonoBehaviour
         if (Input.GetButtonDown("Jump") && isGrounded)
         {
 
-            // this os for the jump
+            // this is for the jump and adding gravity so that player will fall down when he is on the air
             velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
 
         }
