@@ -2,6 +2,7 @@
 //Jas Raj Dangi
 // priyanka Chaudhary
 // Samip Thapa
+// In this part of code we are calling the function to load the screen for starting and extiting the game
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
