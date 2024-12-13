@@ -2,7 +2,7 @@
 //Jas Raj Dangi
 // priyanka Chaudhary
 // Samip Thapa
-
+// this code is for managing game window diplaying like text , cretaing next itertaion of loop of cretaing random spawn enemy
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -38,14 +38,14 @@ public class GameManager : MonoBehaviour
         if (enemiesAlive == 0)
         {
 
-            // increase the number os round played by the player and helps to print the content in the game over screen
+            // increase the number of round played by the player and helps to print the content in the game over screen
             round++;
             NextWave(round);
             //this shows the text
             roundNumber.text = "Round: " + round.ToString();
         }
     }
-
+// function to spawn the zombiee
     public void NextWave(int round)
     {   
         for(var x = 0; x< round; x++)
@@ -87,6 +87,7 @@ public class GameManager : MonoBehaviour
         // End screen is disable in my unity game and this helps to activate the game over screen when player helath is reduce to 0 or less than that
 
         endscreen.SetActive(true);
+        // when endscreen is activate our Game over screen is pop out
         // This shows the text how many round player survived and played
 
         roundTextSurvived.text = round.ToString();
