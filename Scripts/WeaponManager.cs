@@ -3,7 +3,7 @@
 // priyanka Chaudhary
 // Samip Thapa
 
-samip and pratik worked on this one 
+//samip and pratik worked on this one 
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
