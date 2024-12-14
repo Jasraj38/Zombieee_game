@@ -3,6 +3,8 @@
 // priyanka Chaudhary
 // Samip Thapa
 // In this part of code we are calling the function to load the screen for starting and extiting the game
+
+// this is done by Jas
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
