@@ -2,7 +2,7 @@
 //Jas Raj Dangi
 // priyanka Chaudhary
 // Samip Thapa
-
+//jas code this one to show the damge text window 
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
