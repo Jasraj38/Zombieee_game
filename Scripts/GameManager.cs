@@ -3,6 +3,7 @@
 // priyanka Chaudhary
 // Samip Thapa
 // this code is for managing game window diplaying like text , cretaing next itertaion of loop of cretaing random spawn enemy
+//pratik work on this one with Ai for zombiee
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
