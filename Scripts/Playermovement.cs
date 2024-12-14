@@ -3,6 +3,7 @@
 // priyanka Chaudhary
 // Samip Thapa
 // In this Code player can move in the direction through comand of (WASD) and space for jump. In this code we added gravity too.
+// Priyanka helped on editing ground checked and velocity to the player
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
