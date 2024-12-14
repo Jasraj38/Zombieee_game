@@ -2,6 +2,7 @@
 //Jas Raj Dangi
 // priyanka Chaudhary
 // Samip Thapa
+//samip and priyanaka  helped prtaik on this one  to move the player according to the mouse position
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
