@@ -23,8 +23,11 @@ public class EnemyManager : MonoBehaviour
 
     public void Hit(float damage)
     {
+
+    //helath is reduce when it is hit with the palyer
         health -= damage;
         if (health <= 0) {
+        //enemy is die on this code
             gameManager.enemiesAlive--;
             Destroy(player);
         }
@@ -34,6 +37,7 @@ public class EnemyManager : MonoBehaviour
     }
     void Start()
     {
+    //this code helps the zombie to find tthe player location and follow it
         player = GameObject.FindGameObjectWithTag("Player");
     }
 
@@ -42,7 +46,7 @@ public class EnemyManager : MonoBehaviour
     {
 
         GetComponent<NavMeshAgent>().destination = player.transform.position;
-
+//this is the for the animation of zombie of moving 
         if (GetComponent<NavMeshAgent>().velocity.magnitude > 1)
         {
             enemyanimator.SetBool("isRunning", true);
@@ -55,7 +59,7 @@ public class EnemyManager : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject == player)
-        {
+        {// gettin the component of player manager
             player.GetComponent<PlayerMnager>().Hit(damage);
         }
     }
