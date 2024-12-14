@@ -2,7 +2,7 @@
 //Jas Raj Dangi
 // priyanka Chaudhary
 // Samip Thapa
-
+// samip and pratik work on this part of game
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
